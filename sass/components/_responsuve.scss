@@ -1,0 +1,15 @@
+@include media-xsm{
+    .nav{
+        padding: 0.1rem;
+        &__list{
+            text-align: center;
+        }
+        &__item{
+            padding-right: 0.5rem;
+        }
+        &__link{
+            font-size: 0.8rem;
+        }
+    }
+    
+}

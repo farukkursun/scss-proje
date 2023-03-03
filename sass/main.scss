@@ -1,0 +1,24 @@
+@import "./base/reset";
+@import './abstracts/mixin', './abstracts/variables';
+
+@import './pages/about', './pages/cantact', './pages/home', './pages/projects';
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+@import './components/footere','./components/nav','./components/responsuve';
+ 
+
+body{
+    font-family:$font-family;
+    line-height: 1;    
+    background-color: $primary-color;
+    color:$text-color;
+    height:100vh;
+}
+
+a{
+    color:$text-color;
+    text-decoration: none;
+}
+
+h1,h2,h3{
+    font-weight: 400;
+}

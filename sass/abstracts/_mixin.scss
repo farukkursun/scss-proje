@@ -1,0 +1,51 @@
+// mixin
+@mixin transition($sec){
+    transition:all $sec;
+}
+@mixin bgImage($height) {
+    height: $height;
+    width: 100%;
+    // background-image: linear-gradient(direction, color-stop1, color-stop2, ...);
+    // https://www.w3schools.com/css/css3_gradients.asp
+    // background shorthand
+    // https://www.w3schools.com/css/css_background_shorthand.asp
+    background: linear-gradient(
+        to right,
+        rgba($primary-color, 0.9),
+        rgba($primary-color, 0.3)
+    ),
+    url("../../image/model-1.jpg");
+    background-position: center center;
+    background-size: cover;   
+}
+
+@mixin media-xsm {
+    @media screen and (min-width: 0px) {
+      @content;
+    }
+  }
+  
+  @mixin media-sm {
+    @media screen and (min-width: 576px) {
+      @content;
+    }
+  }
+  
+  @mixin media-md {
+    @media screen and (min-width: 768px) {
+      @content;
+    }
+  }
+
+  
+  @mixin media-lg {
+    @media screen and (min-width: 1024px) {
+      @content;
+    }
+  }
+  
+  @mixin media-xl {
+    @media screen and (min-width: 1600px) {
+      @content;
+    }
+  }

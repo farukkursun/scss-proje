@@ -4,7 +4,7 @@
 }
 @mixin bgImage($height) {
     height: $height;
-    width: 100%;
+    width: 100vw;
     // background-image: linear-gradient(direction, color-stop1, color-stop2, ...);
     // https://www.w3schools.com/css/css3_gradients.asp
     // background shorthand
@@ -14,9 +14,11 @@
         rgba($primary-color, 0.9),
         rgba($primary-color, 0.3)
     ),
-    url("../../image/model-1.jpg");
-    background-position: center center;
-    background-size: cover;   
+    url("../../image/FarukBild.jpg");
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: contain;   
+    
 }
 
 @mixin media-xsm {
